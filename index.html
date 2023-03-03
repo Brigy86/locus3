@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Locus Classicus</title>
+
+        <!-- Linking CSS files -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- Linking Animate.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        
+        <!-- Linking Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- CSS styling -->
+        <style>
+            /* For the animation */
+            .my-element {
+            display: inline-block;
+            margin: 0 0.5rem;
+
+            animation: shakeY; /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 10s; /* don't forget to set a duration! */
+            }
+
+            /* This only changes this particular animation duration */
+            .animate__animated.animate__shakeY {
+            --animate-duration: 5s;
+            animation-iteration-count: infinite;
+            }
+
+            /* This changes all the animations globally */
+            :root {
+            --animate-duration: infinite;
+            --animate-delay: 0s;
+            }
+
+            /* Read more3 */
+            #more3 {display: none;}
+
+            /* Read more */
+            #more {display: none;}
+
+            /* Read more1 */
+            #more1 {display: none;}
+
+            /* Read more2 */
+            #more2 {display: none;}
+
+            /* For the video */
+            #video{
+                object-fit: cover;
+            }
+        </style> 
+    </head>
+    <body>
+        <!-- Navbar begins -->
+        <!-- DO NOT FORGET TO LEARN HOW TO INPUT THE LOGO IN THE BROWSER ICON -->
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#home"><img src="pics/logo locus1.png" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home"><b>Home</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about"><b>About Us</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services"><b>Services</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact"><b>Contact Us</b></a>
+                        </li>
+                    </ul>
+              </div>
+            </div>
+        </nav>
+        <!-- navbar ends -->
+
+        <!-- Hero Section -->
+        <div>
+            <div class="container-fluid video" id="home">
+                <video loop muted autoplay preload="auto" src="pics/ani1.mp4" width="100%" height="50%"></video>
+            </div>
+        </div>
+
+
+        <!-- <div>
+            <video
+            muted
+            autoplay
+            preload="auto" id="video">
+                <source src="pics/ani.mp4" type="video/mp4" width="50%" height="50%">
+                Your browser does not surpport this video
+            </video>
+        </div> -->
+
+
+        <!-- <div class="col-md video">
+            <video width="100%" height="50%" controls>
+                <source src="pics/ani.mp4" type="video/mp4">
+                <source src="pics/ani.mp4" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </div> -->
+
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <div style="padding-top: 40%;" class="text-center">
+                        <h1 style="font-family: Tahoma;">LOCUS CLASSICUS</h1>
+                        <h3 style="padding-top: 5%; font-family: Tahoma;">Your</h3>
+                        <h3 style="padding-top: 5%; font-family: Tahoma;">Relevant</h3>
+                        <h3 style="padding-top: 5%; font-family: Tahoma;">Partner</h3>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <img src="pics/hero.jpg" class="rounded-circle" alt="" style="padding-top: 15%;" height="85%" width="90%">
+                </div>
+            </div>
+        </div> -->
+        <!-- Hero Section Ends -->
+
+        <!-- ABOUT US Begins -->
+        <div>
+            <div style="padding-top: 10%;" class=" container text-center" id="about">
+                <h2 style="font-family: Tahoma; color: rgb(29, 29, 226);">ABOUT US</h2>
+                <P>Locus Classicus is a firm of Real Estate brokers with head office in Port Harcourt Rivers State.
+                It was founded in 2014 and has been delivering excellent services to its numerous clients.
+                You can rely on Locus Classicus to manage your properties and broker that property deal in your best interest hence we are referred as ...your reliable partner....</P>
+            </div>
+
+            <div class="container" style="padding-top: 4%;">
+                <div class="row">
+                    <!-- Vision -->
+                    <div class="col-md p-4 text-center text-white" style="background-color: rgb(29, 29, 226); border-radius: 50px; margin-right: 10px; margin-left: 10px;">
+                        <div>
+                            <h2 style="font-family: Tahoma;">OUR VISION</h2>
+                            <P>To be a reliable and relevant partner to our clients.</P>
+                        </div>
+                    </div>
+
+                    <!-- Mission -->
+                    <div class="col-md p-4 text-center text-white" style="background-color: rgb(29, 29, 226); border-radius: 50px; margin-left: 10px; margin-right: 10px; margin-top: 10px; padding-top: 5%;">
+                        <div>
+                            <h2 style="font-family: Tahoma;">OUR MISSION</h2>
+                            <P>To provide excellent topnotch and value oriented services to our client that will reflect our leading position in our industry.</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Us Ends -->
+
+        <!-- Services -->
+        <div class="container" style="padding-top: 10%;" id="services">
+            <h3 class="text-center" style="font-family: Tahoma; color: rgb(29, 29, 226);">OUR SERVICES</h3>
+            <div class="row">
+                <!-- BUY/ SELL PROPERTY -->
+                <div class="col-md p-2">
+                    <img src="pics/pexels-photo-8293778.jpeg" alt="" style="border-radius: 30px;">
+                    <h6 style="padding-top: 10%;"><b>BUY/ SELL PROPERTY</b></h6>
+                    <P style="text-align: left;">
+                        Whether you intend to buy or sell a property, we have certified commission agents that can show you properties that will meet your <span id="dots3">...</span><span id="more3"> desire. We can also sell those properties that you intend to sell seamlessly with the help of our wide coverage and marketing tools.</span><br><button onclick="myFunction3()" id="myBtn3">Read more</button>
+                    </p>
+                </div>
+
+                <!-- PROPERTY INVESTIGATION -->
+                <div class="col-md p-2">
+                    <img src="pics/manage2.jpg" alt="" style="border-radius: 30px;">
+                    <h6 style="padding-top: 10%;"><b>PROPERTY INVESTIGATION</b></h6>
+                    <P style="text-align: left;">
+                        Are you looking to buy a property and you want to get details; especially hidden details about the property?
+                        <br>
+                        We are expert in finding out genuine<span id="dots">...</span><span id="more"> properties and investigating the root of the property to avoid falling into wrong hands.
+                        <br>
+                        Don't just buy properties without verifying the authenticity of the property. We do both onsite and offsite investigation.
+                        <br>
+                        We find out the real owners and investigate if the property or land is in dispute or not.
+                        <br>
+                        We also indemnify our client against any loss after we have done our due diligence. Our investigation is always 100% guaranteed</span>
+                        <br><button onclick="myFunction()" id="myBtn">Read more</button>
+                    </p>
+                </div>
+
+                <!-- PROPERTY MANAGEMENT -->
+                <div class="col-md p-2">
+                    <img src="pics/manage.jpg" alt="" style="border-radius: 30px;">
+                    <h6 style="padding-top: 10%;"><b>PROPERTY/ FACILITY MANAGEMENT</b></h6>
+                    <P style="text-align: left;">
+                        Your property should be an 'investment' when properly managed. You do not need to quarrel with<span id="dots1">...</span><span id="more1"> tenants or struggle to get your rent once Locus Classicus is involved.
+                        <br>
+                        We manage your property by ensuring that the structure is intact and that all tenants pay as at when due.
+                        <br>
+                        Let us manage that property for you while you enjoy peace of mind.
+                        <br>
+                        With our team of professional/ experts; we have all it takes to ensure you enjoy timely ROI for your property.</span>
+                        <br><button onclick="myFunction1()" id="myBtn1">Read more</button>
+                    </p>
+                </div>
+
+                <!-- PROPERTY PERFECTION -->
+                <div class="col-md p-2">
+                    <img src="pics/property.jpg" alt="" style="border-radius: 30px;">
+                    <h6 style="padding-top: 10%;"><b>PROPERTY DOCUMENTATION/ PERFECTION</b></h6>
+                    <P style="text-align: left;">
+                        At Locus Classicus, we go a mile further to ensure that we perfect your property document. Most<span id="dots2">...</span><span id="more2"> purchasers don't know how to go about to perfect their property.
+                        <br>
+                        It is our duty to ensure that our client perfect their title documents with the relevant Agency and Government parastatals.
+                        <br>
+                        This we do without additional cost.</span>
+                        <br><button onclick="myFunction2()" id="myBtn2">Read more</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Services ends -->
+
+        <!-- Contact Us -->
+        <div id="contact">
+            <div class="container pb-3 text-center" style="background-image: linear-gradient(rgba(214, 211, 211, 0.8), rgba(212, 209, 209, 0.8)), url(pics/contact); background-size: 2000px; background-position: center; background-repeat: no-repeat; padding-top: 5%; margin-bottom: 5%; margin-top: 20%;">
+                <div class="row">
+                    
+                    <h2 style="font-family: Tahoma; color: rgb(29, 29, 226);">Contact Us</h2>
+
+                    <!-- Form  -->
+                    <div class="col-md p-3">
+                        <img src="pics/logo locus.png" alt="" height="80%" width="50%">
+                        <h5>Your relevant partner</h5>
+                    </div>
+
+                    <!-- Contact info -->
+                    <div class="col-md p-3">
+                        <div class="contact__details">
+                            <h5 class="contact__title">Reach Us at:</h5>
+                            <a href="tel:+2348063436746" class="contact__tel" id="phone" style="text-decoration: none; color: black;">+234 806 343 6746</a><br>
+                            <a href="tel:+2348099885255" class="contact__tel" id="phone" style="text-decoration: none; color: black;">+234 809 988 5255</a><br>
+                            <a class="contact__mail" href="mailto:locus.classicus@yahoo.com" id="email" style="text-decoration: none; color: black;">locus.classicus@yahoo.com</a><br>
+                            <p>Hello! Awesome to meet you. If you want to reach out to us, please do so by sending a message via our email or any of our phone numbers above, let's talk. Alternatively, you can reach us on social media. We are looking forward to meeting your acquaintance</p>
+                        </div>
+
+                        <!-- Social media Icons -->
+                        <div class="icons text-center" style="font-size: 40px;">
+                            <a href="https://www.facebook.com/PORTHARCOURTREALTOR/"><i class="fa fa-facebook-square" aria-hidden="true" id="facebook"></i></a>
+                            <a href="https://instagram.com/portharcourtrealestatebroker?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="https://wa.me/+2348063436746"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Form 
+                    <div class="col-md p-3">
+                        <h5>Let's work together, feel free, let's talk</h5>
+                        <form action="/action_page.php">
+                            <div class="mb-3 mt-3">
+                                <label for="uname" class="form-label"></label>
+                                <input type="text" class="form-control" id="fname" placeholder="What's your name?" name="fname" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label"></label>
+                                <input type="email" class="form-control" style="height: 40px; font-size:medium;" id="email" placeholder="Email Adress" name="email" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="mb-3 mt-3">
+                                <label for="comment"></label>
+                                <textarea class="form-control" rows="5" style="height: 90px;" id="comment" placeholder="Message" name="text"></textarea>
+                            </div>
+                        <button type="submit" class="btn btn-primary">LET'S TALK</button>
+                        </form>
+                        
+                    </div>
+                     Form Ends -->
+                </div>
+            </div>
+        </div>
+        <!-- Contact Us Ends -->
+
+        <!-- Footer -->
+        <div class="containerfluid bg-light text-black ">
+            <div class="footer">
+
+                <!-- Logo -->
+                <div class="row text-center" style="padding-top: 10%;">
+                    <div class="col-md p-3">
+                        <div class="logo">
+                            <img src="pics/logo locus.png" alt="" height="50%" width="50%">
+                        </div>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="col-md p-3">
+                        <h4 class="text-center" style="font-family: Tahoma; color: rgb(29, 29, 226);"><b>Visit Us</b></h4>
+                        <p>
+                            <i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 10px;"></i>RIVERS STATE
+                        </p>
+                        <p>
+                            Cafrey plaza Rumuosi by Obiri-Ikwerre flyover, Port Harcourt, Rivers State
+                        </p>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="col-md p-3">
+                        <h4 style="font-family: Tahoma; color: rgb(29, 29, 226);"><b>Let's Talk</b></h4>
+                        <p>
+                            <i class="fa fa-envelope-o" aria-hidden="true" style="margin-right: 10px;"></i><a class="contact__mail" href="mailto:locus.classicus@yahoo.com" id="email" style="text-decoration: none; color: black;">locus.classicus@yahoo.com</a>
+                        </p>
+                        <p>
+                            <i class="fa fa-mobile" aria-hidden="true" style="margin-right: 10px;"></i>
+                            <a href="tel:+2348063436746" class="contact__tel" id="phone" style="text-decoration: none; color: black;">+234 806 343 6746</a><br>
+                            <a href="tel:+2348099885255" class="contact__tel" id="phone" style="margin-left: 20px; text-decoration: none; color: black;">+234 809 988 5255</a>
+                        </p>
+                    </div>
+
+                    <!-- Follow -->
+                    <div class="col-md p-3">
+                        <h4 class="text-center" style="font-family: Tahoma; color: rgb(29, 29, 226);"><b>Follow Us</b></h4>
+                        <p>
+                            <a  style="text-decoration: none; color: black;" href="https://www.facebook.com/PORTHARCOURTREALTOR/"><i class="fa fa-facebook" aria-hidden="true" style="margin-right: 10px;"></i>Facebook</a>
+                        </p>
+                        <p>
+                            <a style="text-decoration: none; color: black;" href="https://instagram.com/portharcourtrealestatebroker?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram" aria-hidden="true" style="margin-right: 10px;"></i>Instagram</a>
+                        </p>
+                        <p>
+                            <a style="text-decoration: none; color: black;" href="https://wa.me/+2348063436746"><i class="fa fa-whatsapp" aria-hidden="true" style="margin-right: 10px;"></i>Whatsapp</a>
+                        </p>
+                    </div>
+
+                    <!-- Back Up -->
+                    <div class="col-md p-1">
+                        <p style="margin-left: 40px; padding-top: 28%;">
+                            <a href="#home"><i class="fa fa-arrow-circle-up animate__animated animate__shakeY text-center" aria-hidden="true" style="font-size: 60px; color: rgb(29, 29, 226);" id="animate"></i></a><br>
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <hr>
+                    <p>&copy; 2022 Nwogu Bridget</p>
+
+                    <ul class="nav col-md justify-content-end">
+                        <li class="nav-item"><a href="#home" class="nav-link text-dark">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link text-dark">About Us</a></li>
+                        <li class="nav-item"><a href="#services" class="nav-link text-dark">Services</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link text-dark">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Footer ends -->
+
+        <script>
+            // For the third read more
+            function myFunction3() {
+              var dots = document.getElementById("dots3");
+              var moreText = document.getElementById("more3");
+              var btnText = document.getElementById("myBtn3");
+            
+              if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+              } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+              }
+            }
+
+            // For the first read more
+            function myFunction() {
+              var dots = document.getElementById("dots");
+              var moreText = document.getElementById("more");
+              var btnText = document.getElementById("myBtn");
+            
+              if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+              } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+              }
+            }
+
+            // For the second read more
+            function myFunction1() {
+              var dots = document.getElementById("dots1");
+              var moreText = document.getElementById("more1");
+              var btnText = document.getElementById("myBtn1");
+            
+              if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+              } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+              }
+            }
+
+            // For the third read more
+            function myFunction2() {
+              var dots = document.getElementById("dots2");
+              var moreText = document.getElementById("more2");
+              var btnText = document.getElementById("myBtn2");
+            
+              if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+              } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+              }
+            }
+        </script>
+
+
+        <!-- Linking JS file -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
